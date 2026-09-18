@@ -1,0 +1,20 @@
+# A night at the tavern. Every branch below is a jevbetter decision.
+
+say "You push open the tavern door. The room smells of ale and woodsmoke."
+
+match "what do you do?":
+  "order a drink at the bar" -> say "The bartender slides you a foaming ale."
+  "pick a fight with the big guy in the corner" -> say "You wake up under a table. Worth it? No."
+  "sit quietly in the corner and watch" -> say "Nobody notices you. Good. You like it that way."
+
+if feels "are you still thirsty?":
+  say "You order another ale. The bartender nods approvingly."
+else:
+  say "You settle your tab and stretch."
+
+say "Later, you knock on the innkeeper's door."
+
+while feels "is anyone answering the door?":
+  say "You knock again, louder."
+
+say "The door creaks open. 'About time,' the innkeeper grumbles."
